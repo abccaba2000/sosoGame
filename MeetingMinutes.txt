@@ -1,0 +1,19 @@
+2017.11.15
+
+-已完成ch2, ch3 homework，預計下星期三檢查ch4, ch5 homework。
+-待完成ch1~3的答案定本。
+-待將MeetingMinutes從Github的Issue移到Code
+
+
+2017.11.08
+
+待將兩人的Ch1 HW合併。
+下周Meeting檢查Ch2~3 HW。
+
+2017.11.01
+
+此次遊戲計畫暫時稱為"sosogame"，計畫的目的為滿足製作遊戲的慾望以及學習Python(尤其是pygame)，預計做到開發者滿意之後再開放給身旁的人試玩或甚至放到網路上，評估是否滿意的方式待下星期確定遊戲類型後再討論。
+
+之後打算製作所需技術與Papers Please(https://www.youtube.com/watch?v=3UATRR_UT7c)相仿－－Real Time但畫面及聲光效果較不複雜的遊戲。為了順利完成遊戲，必須先了解Pyhton以及Pygame對遊戲製作的支援程度，所選用的學習資源為Program Arcade Games With Python And Pygame(http://programarcadegames.com/index.php)，預估進度為從今日(2017.11.01)開始，每周兩章，十周後(2018.01.10)讀完二十章，且每周完成tutorial後面附上的Review (其實就是homework)。
+
+下周檢查tutorial chapter1~2的review的code。
