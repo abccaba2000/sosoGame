@@ -2,7 +2,7 @@
 
 -已完成ch2, ch3 homework，預計下星期三檢查ch4, ch5 homework。
 -待完成ch1~3的答案定本。
--待將MeetingMinutes從Github的Issue移到Code
+-待將MeetingMinutes從Github的Issue移到Code。
 
 
 2017.11.08
