@@ -1,0 +1,47 @@
+==Answers for Worksheet==
+
+1. 1001 0011
+
+2. 87
+
+3. FF
+
+4. 
+	Bin		Dec
+	1		1
+	10		2
+	100		4
+	1000	8
+	10000	16
+
+5. A machine code that convert source code to machine code.
+
+6. The code human types in.
+
+7. The language that machine can be instructed directly, it's almost notated in binary system.
+
+8. Machine language is a first generation language.
+
+9. Assembly language, the language which replaced bites by short words, help people to comprehend and memorize the commands.
+
+10. People could use more comprehensible terms to write codes, called "source code". The source code then go through the step "compilation" and "linkage" to carry out the final program. The final program is dependent on operating system.
+
+11. Interpreter could interpret source code to machine language directly, no steps of compilation or linkage. 
+Thanks to the ability to interpret source code directly, platform-specific interpreter assure source code could run on different platform perfectly.
+
+12. According to the ranking by TIOBE ( https://www.tiobe.com/tiobe-index/ ), the most popular programming language is Java, and C, C++, Python are at second to fourth place, respectively.
+
+13. I went to the job board in Stack Overflow, Developer Jobs, checked the top 5 results (No filter, no priority). Job titles and their programming language related requirements are showing below: 
+
+	1. Python Engineer: Python
+	2. Senior Python Software Engineer: Python, JavaScript
+	3. Data Scientist Lead (m/f) for leading e-hailing app in Europe: SQL, R, Python, Spark, Scala
+	4. Principal Data Scientist: Python, TensorFlow, R, SQL/NoSQL, AWS
+	5. Manager, Product Engineering Team: Python
+
+14. Syntax focuses on "Spelling", "Grammer"; Semantics focuses on "Meaning".
+
+15. Gameboy.
+	Hardware: CPU, RAM, cassette, screen, sound, battery... ( https://zh.wikipedia.org/wiki/Game_Boy )
+	Software: Saved in cassette, so that user could play various games in just one Gameboy. 
+	

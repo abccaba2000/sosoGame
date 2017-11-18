@@ -1,0 +1,74 @@
+1.
+
+	1010 1000
+
+2.
+
+	87
+
+3.
+
+	1A2B
+
+4.
+
+	Bin		Dec
+	1		1
+	10		2
+	100		4
+	1000	8
+	10000	16
+
+5.
+
+	A program that translate source language into target language.
+
+6.
+
+	A software which is originally written by a human in plain text.
+
+7.
+
+	The machine readable language.
+
+8.
+
+	Machine language is a first generation language (1GL).
+
+9.
+
+	Assembly language is a second generation language (2GL), which uses mnemonic to represent instructions.
+
+10.
+
+	Human readable language, Fortran, C, Basic... are examples of third generation language (3GL).
+
+11.
+
+	A program can interpret source code to machine code directly, without conpilation or linkage. In most circumstances, interpreted program runs slower to compiled program (compiler would scan the whole source code and then optimize it). Compiled programs are usually platform-dependent; interpreted programs usually not.
+
+12.
+
+	According to the ranking by TIOBE ( https://www.tiobe.com/tiobe-index/ ), the most popular programming language is Java, and C, C++, Python are at second to fourth place, respectively.
+
+13.
+
+	 The first 5 results of job title and their programming-related requirements in the Developer Jobs, Stack Over are at the following :
+
+		1. Python Engineer: Python
+		
+		2. Senior Python Software Engineer: Python, JavaScript
+		
+		3. Data Scientist Lead (m/f) for leading e-hailing app in Europe: SQL, R, Python, Spark, Scala
+		
+		4. Principal Data Scientist: Python, TensorFlow, R, SQL/NoSQL, AWS
+		
+		5. Manager, Product Engineering Team: Python
+
+14.
+
+	Syntax focuses on "Spelling" and "Grammer"; Semantics focuses on "Meaning".
+
+15.
+
+	Smartphones use CPU and most run on Android or iOS.

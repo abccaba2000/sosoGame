@@ -1,0 +1,154 @@
+  Chapter 01 Worksheet
+When writing answers to questions, please use proper grammar, capitalization,and punctuation. Please limit the length of each line to 80 characters.
+1 Write a line of code that will print your name.   
+        print("Lin Chuan-An")
+2 How do you enter a comment in a program?
+        add '#'  in the beginning of the line of  comment
+3 What do the following lines of code output?ALSO: Why do they give a different answer?
+    print(2 / 3) 0.6666666666666666
+    
+    print(2 // 3) 0                        “Floor division” will always round the answer down to the nearest integer
+
+4 Write a line of code that creates a variable called pi and setsit to an appropriate value.
+        
+        pi = 3.14159
+
+5 Why does this code not work?
+    A = 22
+    print(a) because 'A' and 'a' is different
+
+6 All of the variable names below can be used. But which ONE of these isthe better variable name to use?  
+    a
+    A
+    Area
+    AREA
+    area
+    area_of_rectangle <--this one
+    Area_Of_Rectangle
+
+7  Which of these variables names are not allowed in Python? (More than onemight be wrong. Also, this question is not asking about improper names, justnames that aren't allowed. Test them if you aren't sure.)
+apple
+Apple
+APPLE
+Apple2
+1Apple
+account number
+account_number
+account.number <--- not allowed
+accountNumber
+account# <--- not allowed
+pi
+PI
+fred
+Fred
+GreatBigVariable
+greatBigVariable
+great_big_variable
+great.big.variable <--- not allowed
+2x <--- not allowed
+x2x
+total% <--- not allowed
+#left <--- not allowed
+
+
+
+8 Explain the mistake in this code:
+    print(a)
+    a = 45
+    
+       the variable should be claim before print
+
+9 Explain the mistake in this code:
+    pi = float(3.14)
+
+3.14 itself is of type float
+    
+10 This program runs, but the code still could be better. Explain what is wrong with the code.
+    radius = float(input("Radius:"))
+    x = 3.14
+    pi = x
+    area = pi * radius ** 2
+    print(area)
+        
+        immediately assign pi = 3.14 is better; use parenthesis to "radius**2" is better
+
+11 Explain the mistake in the following code:
+    x = 4
+    y = 5
+    a = ((x) * (y))
+    print(a)
+
+maybe too many parenthesis
+
+12 Explain the mistake in the following code:
+    x = 4
+    y = 5
+    a = 3(x + y)
+    print(a)
+
+the multiplication operator '*' can't be omitted.
+
+13 Explain the mistake in the following code:
+    radius = input(float("Enter the radius:"))
+
+    
+    it should be radius = float(input("Enter the radius:"))
+
+14 Do all these print the same value? Which one is better to use and why?
+    print(2/3+4)
+    print(2 / 3 + 4)
+    print( 2 / 3+ 4 )
+
+yes, the middle one is the best because it looks elegant!
+
+15 What is a constant?
+    
+    All upper-case variable names like MAX_SPEED are allowed only in circumstances where the variable's value should never change.                 A variable that isn't variable is called a constant.
+
+16 How are variable names for constants different than other variable names?
+
+    All upper-case variable names like MAX_SPEED are allowed only in circumstances where the variable's value should never change.                 A variable that isn't variable is called a constant.
+
+17 What is a single quote and what is a double quote?Give and label an example of both.
+
+    this is a single-quote: ' and this is a double-quote: " If I ask for a double-quote, it is a common mistake to write "" which is really a double double-quote.
+
+18 Write a Python program that will use escape codes to print a double-quote and a new line using the Window's standard. (Note: I'm asking for the Window'sstandard here. Look it up out of Chapter 1.)
+    
+    print('\"\r\n')
+
+19 Can a Python program print text to the screen using single quotes instead of double quotes?
+
+    yes
+
+20 Why does this code not calculate the average?
+    print(3 + 4 + 5 / 3)
+    
+    because the order of operation is to do the divisin earlier than the addition    
+
+21 What is an ``operator'' in Python?
+
+    An operator is a symbol like + or -. An assignment operator is the = symbol
+
+22 What does the following program print out?
+    x = 3
+    x + 1
+    print(x)
+
+    the output is 3
+
+23 Correct the following code:
+    user_name = input("Enter your name: )"
+  
+    the correct version:
+    user_name = input("Enter your name: ")
+
+
+24 Correct the following code:
+    value = int(input(print("Enter your age")))
+    
+    the correct version:
+    value = int(input("Enter your age"))
+  
+﻿
+

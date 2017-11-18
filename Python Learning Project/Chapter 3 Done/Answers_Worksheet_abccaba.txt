@@ -1,0 +1,258 @@
+
+Chapter 03 Worksheet
+ 1 What is missing from this code? (1 pt)
+1
+2
+3
+4
+5
+temperature = float(input("Temperature: ")
+if temperature > 90:
+print("It is hot outside.")
+else:
+print("It is not hot out.")
+    
+    need indentations in line 3 and line 5
+
+2 Write a Python program that will take in a number from the user and printif it is positive, negative, or zero. Use a proper if/elif/else chain, don'tjust use three if statements.
+
+    number = float(input("please input a number: "))
+    if number < 0:
+        print("It is negative")
+    elif number == 0:
+        print("It is zero")
+    else:
+        print("It is positive")
+
+3 Write a Python program that will take in a number from a user and printout ``Success'' if it is greater than -10 and less than 10, inclusive. (1 pt)
+    
+    number = float(input("please input a number: "))
+    if number >= 10 and number <= 10:
+        print("Success")
+
+
+4 This runs, but there is something wrong. What is it? (1 pt)
+1
+2
+3
+4
+5
+6
+7
+user_input = input("A cherry is a: ")
+print("A. Dessert topping")
+print("B. Desert topping")
+if user_input.upper() == "A":
+print("Correct!")
+else:
+print("Incorrect.")
+
+    need indentations in line 5 and line 6
+    the input function should be placed after stating the two choices
+
+
+5 There are two things wrong with this code that tests if x is set to apositive value. One prevents it from running, and the other is subtle.Make sure the if statement works no matter what x is set to.Identify both issues. (2 pts)
+1
+2
+3
+4
+5
+x == 4
+if x >= 0:
+print("x is positive.")
+else:
+print("x is not positive.")
+
+    the equal symbol should be deleted in line 2
+    need indentations in line 3 and line 5
+
+6 What three things are wrong with the following code? (3 pts)
+1
+2
+3
+x = input("Enter a number: ")
+if x = 3
+print("You entered 3")
+
+    needs ":" in the end of line 2
+    needs indentation in line 3
+
+
+7 There are four things wrong with this code. Identify all four issues. (4 pts)
+1
+2
+3
+4
+5
+answer = input("What is the name of Dr. Bunsen Honeydew's assistant? ")
+if a = "Beaker":
+print("Correct!")
+else
+print("Incorrect! It is Beaker.")
+
+    in line 2, use "answer" instead of "a"
+    in line 2, use "==" instead of "="
+    need indentations in line 3 and line 5
+    need ":" in the end of line 4
+
+8 This program doesn't work correctly. What is wrong? (1 pt)
+1
+2
+3
+x = input("How are you today?")
+if x == "Happy" or "Glad":
+print("That is good to hear!")
+
+    needs indentation in line 2
+
+
+9 Look at the code below. Write your best guess here on what it will print.Next, run the code and see if you are correct.Clearly label your guess and the actual answer.Also, if this or any other example results in an error, make sure tostate that an error occurred.While you don't need to write an explanation, make sure you understandwhy the computer prints what it does. Don't get caught flat-footed whenyou need to know later. (2 pts)
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+x = 5
+y = x == 6
+z = x == 5
+print("x=", x)
+print("y=", y)
+print("z=", z)
+if y:
+print("Fizz")
+if z:
+print("Buzz")
+
+    guess: 
+        an error occur        
+    run:
+        IndentationError: expected an indented block
+
+10 Look at the code below. Write you best guess on what it will print.Next, run the code and see if you are correct. (2 pts)
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+x = 5
+y = 10
+z = 10
+print(x < y)
+print(y < z)
+print(x == 5)
+print(not x == 5)
+print(x != 5)
+print(not x != 5)
+print(x == "5")
+print(5 == x + 0.00000000001)
+print(x == 5 and y == 10)
+print(x == 5 and y == 5)
+print(x == 5 or y == 5)
+
+    guess:
+        True
+        False
+        True
+        False
+        False
+        False
+        False
+        True
+        False
+        False
+    run:
+        True
+        False
+        True
+        False
+        False
+        True <-- gg
+        False
+        False
+        True
+        False
+
+11 Look at the code below. Write you best guess on what it will print.Next, run the code and see if you are correct. (2 pts)
+1
+2
+3
+4
+5
+6
+7
+8
+9
+print("3" == "3")
+print(" 3" == "3")
+print(3 < 4)
+print(3 < 10)
+print("3" < "4")
+print("3" < "10")
+print( (2 == 2) == "True" )
+print( (2 == 2) == True )
+print(3 < "3")
+
+    guess:
+        True
+        False
+        True
+        True
+        True
+        False
+        False
+        True
+        False
+    run:
+         File "tet.py", line 9, in <module>
+        print(3 < "3")
+        TypeError: '<' not supported between instances of 'int' and 'str'
+
+
+12 What things are wrong with this section of code?The programmer wants to set the money variable according tothe initial occupation the user selects. (1 pt)
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+print("Welcome to Oregon Trail!")
+print("A. Banker")
+print("B. Carpenter")
+print("C. Farmer")
+user_input = input("What is your occupation? ")
+if user_input = A:
+money = 100
+else if user_input = B:
+money = 70
+else if user_input = C:
+money = 50
+print("Great! you will start the game with", money, "dollars.")
+
+        need indentations in line 7, 9, 11
+        needs to quote the right hand side of equallity in line 6, 9, 11
+        needs "==" instead of "=" in line 6, 9, 11
+﻿

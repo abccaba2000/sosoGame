@@ -1,0 +1,87 @@
+Worksheet Answer
+
+1.
+print("Vincent Yu")
+
+2.
+Put the character '#' at the beginning of context.
+
+3.
+print(2 / 3) --> 0.66666666
+print(2 // 3) --> 0
+
+4.
+pi = 3.14
+
+5.
+the variable 'a' have not been assigned by any value.
+
+6.
+"area_of_rectangle" is the better one.
+
+7.
+number at the beginning of variable name is forbidden,
+so "1Apple"、"2x" are illegal ones.
+
+'#' is escaping character, so "account#"、"#left" are 
+illegal ones
+
+8.
+Python runs programs sequentially, from top to bottom.
+'a' is printed before being assigned any value.
+
+9.
+"3.14" is already a floating number
+
+10.
+"3.14" might be assigned to "pi" directly, the variable
+'x' is redundant.
+
+11.
+the parenthesis surround 'x' and 'y' is redundant.
+
+12.
+loss the operator in the line 3, between '3' and "(x + y)"
+
+13.
+the string "Enter the radius:" should be the input of
+"input" function, not "float".
+
+14.
+All of them print the same value, but the code in line 2 
+is better because there is always a space between number 
+and operator, which is the coding style Python community
+perferred.
+
+15.
+It's a variable that the value of it is not variable.
+
+16.
+Constant : all uppercase
+Other variable : words are connected using '_'
+
+17.
+Single quote : ''	ex: 'x'
+Double quote : ""	ex: "Happy"
+
+18.
+input("The name of the \"game\" is :\n\r")
+
+19.
+I don't know
+
+20.
+The operating priority of division is higher than addtion.
+The code should be revised as "print((3 + 4 + 5) / 3)".
+
+21.
+A sign that tell computer how to calculate 2 numbers.
+
+22.
+3
+
+23.
+user_name = input("Enter your name: ")
+
+24.
+value = int(input("Enter your age: "))

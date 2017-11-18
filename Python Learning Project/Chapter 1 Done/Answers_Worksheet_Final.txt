@@ -1,0 +1,119 @@
+1.
+	
+	print("My name")
+
+2.
+
+	put '#' at the beginning of comment
+
+3.
+	Code			Output
+	print(2 / 3)	0.6666666666666666
+	print(2 // 3)	0
+
+	'/' means 'division', which is familiar to what we learn in math course. '//' means 'floor division', which will always round the answer down to the nearest integer.
+
+4.
+
+	The way without thinking : 
+		pi = 3.14159
+
+	The second way :
+		import math
+		pi = pi.math
+
+5.
+
+	'A' is differ from 'a' i python, 'a' is not defined so that it cannot be printed.
+
+6.
+
+	'area_of_rectangle' is better one.
+	
+	The recommended coding style about variable in python is all lowercase and connect the words by underlines.
+
+7.
+	Illegal	variable names		Reason of illegal
+	1Apple						Must start with a letter or an underscore.
+	account number				Shouldn't include space.
+	account.number				'.' is preserved to indicate attributes of an object.
+	account#					Words behind '#' will be see as comment.
+	great.big.variable			'.' is preserved to indicate attributes of an object.
+	2x							Must start with a letter or an underscore.
+	total%						'%' is mod operator.
+	#left						Words behind '#' will be see as comment.
+
+8.
+
+	Variables can not be printed before being defined.
+
+9.
+
+	'3.14' itself is a floating number, no need to cast. But the code will work correctly, no compilation error.
+
+10.
+
+	It is more concise to combine 'x = 3.14' in line 2 and 'pi = x' in line 3 to 'pi = 3.14'; in addition,  
+	'radius ** 2' in line 4 is better to be enclosed by parentheses.
+
+11.
+
+	The parentheses which elcose 'x' and 'y' are redundant.
+
+12.
+
+	The operator between '3' and '(x + y)' in line 3 is lost.
+
+13.
+
+	"Enter the radius" should be the input of 'input' function, not 'float'. There should be some input before converting them to float numbers.
+
+14.
+
+	All of them print the same value, but the code in line 2 is better, because there is always a space between number and operator, which is the coding style Python community perferred (elegant!).
+
+15.
+
+	A variable that value never changes.
+
+16.
+
+	Letters in the names of constants are all uppercase, of variable are all lowercase.
+
+17.
+
+	Single quote : '	ex : 'example'
+	Double quote : "	ex : "example"
+
+18.
+
+	print('\"\r\n')
+
+19.
+
+	Yes. Single quote and double quote are interchangeable in python.
+
+20.
+
+	The precedence of division operator is higher than addtion operator.
+	The code should be revised as "print((3 + 4 + 5) / 3)".
+
+21.
+
+	The sign which can manipulate the value of operands.
+
+22.
+
+	The program will print '3'.
+
+23.
+
+	Revised code :
+
+		user_name = input("Enter your name: ")
+
+24.
+
+	Revised code :
+
+		value = int(input("Enter your age"))

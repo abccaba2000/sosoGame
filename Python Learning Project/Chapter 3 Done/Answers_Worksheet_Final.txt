@@ -1,0 +1,106 @@
+1.
+
+	The right parenthesis of 'float' function is missing.
+
+2.
+
+	num = float(input("Please key in a number : "))
+	if num > 0:
+		print("Positive")
+	elif num < 0:
+		print("Negative")
+	else :
+		print("Zero")
+
+3.
+
+	num = float(input("Key in a number : "))
+	if num >= -10 and num <= 10 :
+		print("Success")
+
+4.
+
+	Choices should be print before 'input' funciton.
+
+5.
+
+				Wrong		Revised
+
+	line 1		x == 4		x = 4
+	line 2		x >= 0		x > 0
+
+6.
+
+	In line 1, the input value should be converted to int or float type.
+
+	In line 2, use conditional opertor "==" rather than assignment "=" to check the equality.
+
+	In line 2 : there should be a ":" behind the conditional statement.
+
+7.
+
+				Wrong			Revised
+
+	line 2		a				answer	
+	line 2		=				==
+	line 4		remove the indention of "else"
+	line 4		else			else :
+
+8.
+
+				Wrong		Revised
+
+	line 2 		"Glad"		x == "Glad"
+
+9.
+
+	Test result :
+
+		x= 5
+		y= False
+		z= True
+		Buzz
+
+10.
+
+	Test result :
+
+		True
+		False
+		True
+		False
+		False
+		True
+		False
+		False
+		True
+		False
+		True
+
+11.
+
+	Test result :
+
+		True
+		False
+		True
+		True
+		True
+		False
+		False
+		True
+		Traceback (most recent call last):
+		  File "C:/Users/VincentYu/Desktop/11.py", line 9, in <module>
+			print(3 < "3")
+		TypeError: '<' not supported between instances of 'int' and 'str'
+
+12.
+
+				Wrong						Revised
+
+	line 9		if user_input = A : 		if user_input.upper() == "A" :
+
+	line 11 	else if user_input = B : 	elif user_input.upper() == "B" :
+
+	line 13		else if user_input = C :	elif user_input.upper() == "C" :
+

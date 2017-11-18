@@ -1,3 +1,0 @@
-1. print("Vincent Yu")
-2. Put a '#' at the begin of the comment. For multiple lines comment, use triple single quotes(') at the begin and end of the comment.
-3. .
