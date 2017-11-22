@@ -1,0 +1,146 @@
+1.
+
+	for i in range(10) :
+		print("Vincent")
+	print("Done")
+
+2.
+
+	print("Red")
+	for i in range(20) :
+		print("Gold")
+
+3.
+
+	for i in range(2, 102, 2) :
+		print(i)
+
+4.
+	count = 10
+	while count >= 0 :
+		print(count)
+		count -= 1
+	print("Blast off!")
+
+5.
+
+			Wrong			Revised
+Line 5		input()			float(input())
+Line 6		total + i		total + x
+Line 7		x				total
+
+6.
+
+	import random
+	print(random.randrange(1, 11))
+
+7.	!!!
+
+	import random
+	print(random.random() * 9 + 1)
+
+8.
+	sum = 0
+	count_positive = 0
+	count_negative = 0
+	count_zero = 0
+
+	print("Please key in 7 numbers : ")
+	for i in range(7) :
+		temp = float(input("Num : "))
+		if temp > 0 :
+			count_positive += 1
+		elif temp < 0 :
+			count_negative += 1
+		else :
+			count_zero += 1
+		sum += temp
+    
+	print("Sum = ", sum)
+	print("Positive count : ", count_positive)
+	print("Negative count : ", count_negative)
+	print("Zero count : ", count_zero)
+
+9.
+
+	import random
+
+	count_head = 0
+	count_tail = 0
+	for i in range(50) :
+		rand_num = random.randrange(2)
+		if rand_num == 0 :
+			count_head += 1
+		elif rand_num == 1 :
+			count_tail += 1
+	print("Head count : ", count_head)
+	print("Tail count : ", count_tail)
+
+	
+10.
+
+	import random
+
+	exit = False
+
+
+	print("Let's play paper-scissors-stone !")
+	print("Paper : '1', Scissors : '2', Stone : '3'")
+	print("Quit : 'q'\n")
+
+	while not exit :
+
+		# Player's Decision
+		choice_player = input("Your choice : ")
+
+		if choice_player == 'q' :
+			exit = True
+		else :
+			choice_player = int(choice_player)
+			if(choice_player == 1) :
+				print("You : Paper")
+			if(choice_player == 2) :
+				print("You : Scissors")
+			if(choice_player == 3) :
+				print("You : Stone")
+
+		if exit == False :
+
+			# Machine's Decision
+			choice_machine = random.randrange(3)
+
+			if choice_machine == 0 :
+				print("Machine : Paper")
+			elif choice_machine == 1 :
+				print("Machine : Scissors")
+			else :
+				print("Machine : Stone")
+
+
+			# To Judge who's the winner
+
+			# Machine wins
+			if (choice_machine == 0 and choice_player == 3) \
+			   or (choice_machine == 1 and choice_player == 1) \
+			   or (choice_machine == 2 and choice_player == 2) :
+				print("Machine is smarter than Human!")
+
+			# Machine loses
+			elif (choice_machine == 0 and choice_player == 2) \
+				 or (choice_machine == 1 and choice_player == 3) \
+				 or (choice_machine == 2 and choice_player == 1) :
+				print("Lucky!")
+
+			# Draw
+			elif (choice_machine == 0 and choice_player == 1) \
+				 or (choice_machine == 1 and choice_player == 2) \
+				 or (choice_machine == 2 and choice_player == 3) :
+				print("Draw...")
+
+			# Other conditions
+			else :
+				print("No this condition...")
+
+			print()
+
+	print("\n\nGame Over !")
