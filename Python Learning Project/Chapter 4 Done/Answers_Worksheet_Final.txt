@@ -1,0 +1,141 @@
+1.
+	for i in range(10) :
+		print("My name")
+	print("Done")
+
+2.
+
+	for i in range(20)
+		print("Red")
+		print("Gold")
+
+3.
+
+	for i in range(2, 102, 2) :
+		print(i)
+
+4.
+
+	i = 10
+	while i >= 0 :
+		print(i)
+		i -= 1
+	print("Blast off!")
+
+5.
+
+			Wrong		Revised
+Line 5		input()		float(input())
+Line 6		total + i	total + x
+Line 7		x			total
+
+6.
+
+	import random
+	print(random.randrange(1,11))
+
+7.
+
+	import random
+	print(random.random() * 9 + 1)
+
+	# According to the official doc(https://docs.python.org/3/library/random.html ), the funtion random.random() returns a value in [0, 1) , so "random.random() * 9 + 1" would not return 10, which is requested from question. But it's the best answer we could figure out.
+8.
+
+	pos = 0
+	neg = 0
+	zero = 0
+	sum = 0
+	print("Please key in 7 numbers : ")
+
+	for i in range(7) :
+
+		temp = float(input("Num " + i + " = "));
+		
+		if temp > 0 :
+			pos += 1
+		elif temp < 0 :
+			neg += 1
+		else :
+			zero += 1
+
+		sum += temp
+
+	print("Sum = ", sum)
+	print("Positive count : ", pos)
+	print("Negative count : ", neg)
+	print("Zero count : ", zero)
+
+9.
+
+	import random
+
+	head = 0
+	tail = 0
+
+	for i in range(50) :
+		if random.randrange(2) :
+			print("tail")
+			tail += 1
+		else :
+			print("head")
+			head += 1
+
+	print("Head count : ", head)
+	print("Tail count : ", tail)
+
+10.
+
+	import random
+
+	exit = False
+
+	print("Here's Paper-Scissors-Stone !")
+	print("Enter your choice :")
+	print("'1' for Paper, '2' for Scissors, '3' for Stone")
+	print("'q' for Quit\n")
+
+	while not exit :
+
+		# Player's Decision
+		choice_player = input("\n\nYour choice : ")
+
+		if choice_player == 'q' :
+			exit = True
+		else :
+			choice_player = int(choice_player)
+			if choice_player == 1 :
+				print("You : Paper")
+			elif choice_player == 2 :
+				print("You : Scissors")
+			elif choice_player == 3 :
+				print("You : Stone")
+			else :
+				print("No this option")
+				continue
+
+		if not exit:
+			
+			# Machine's Decision
+			choice_machine = random.randrange(3)
+
+			if choice_machine == 0 :
+				print("Machine : Paper")
+			elif choice_machine == 1 :
+				print("Machine : Scissors")
+			else :
+				print("Machine : Stone")
+
+			# Condition : Draw
+			if choice_player == choice_machine + 1 :
+				print("\nDraw")
+
+			# Condition : Machine win
+			elif choice_player % 3 == choice_machine :
+				print("\nMachine win !")
+
+			# Condition : Player win
+			else : 
+				print("\nYou win !")
+
+	print("\n\nGame Over !")
