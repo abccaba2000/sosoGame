@@ -1,0 +1,47 @@
+1. 
+	(1) The y value go up as the position move down the screen
+	(2) The screen is in the lower right corner.
+2.
+	import pygame
+	pygame.init()
+3.
+	All of rad, blue, green color are in value 255. They are added together to form the white color.
+4.
+	When we use the variable as a constant
+	When the value of the variable might change in the program
+5.
+	soso.
+	It sets the mode of the screen the program is going to create.
+6.
+	It handles each event, proccess the objects in the screen, update the screen during each circulation.
+7.
+	It determines how long a circulation take.
+8.
+	(1) To specify that the line is drawn on the screen.
+	(2) To soso that the origin of the line is in position (0,0).
+	(3) To specify that the end of the line is in position (100,100).
+	(4) To soso that the width of the line is 5 pixels.
+9.
+	Use offset to draw different lines when running in a loop.
+10.
+	There will not be a border around the rectangle. Instead it will be filled in with the color specified.
+11.
+	(1) (20,20)
+	(2) The left-up corner of the rectangle to draw the ellipse.
+	(3) length: 100 ; width: 250
+12.
+	the start and end degree
+13.
+	(1) select the font to use
+	(2) render the text
+	(3)	put the text image on the screen
+14.
+	I don't understand. I think the pygame.font.SysFont() function can be in the main loop.
+15.
+	The positions of the four vertex are (50,100),(0,200),(200,200),(100,50)
+16. 
+	It put everything you draw in this loop on the screen.
+17. 
+	It closes the screen
+18.
+	pygame.draw.circle(screen, BLACK, [10,10], 10, 1)

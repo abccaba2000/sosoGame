@@ -28,6 +28,13 @@ pygame.display.set_caption("Let me draw you a dream")
 # Loop until the user clicks the close button.
 done = False
 clock = pygame.time.Clock()
+
+SMALL_SIZE = 25
+BIG_SIZE = 50
+
+text_size = SMALL_SIZE
+bigger = True
+clock_n = 0
  
 # Loop as long as done == False
 while not done:
@@ -129,6 +136,28 @@ while not done:
 		w += 1
 		edge -= 2
 		
+	clock_n %= 2
+	if clock_n == 1:
+		if bigger:
+			text_size += 1
+		else:
+			text_size -= 1
+	clock_n += 1
+	
+	if text_size == BIG_SIZE:
+		bigger = False
+	if text_size == SMALL_SIZE:
+		bigger = True
+	
+	# Select the font to use, size, bold, italics
+	font = pygame.font.SysFont('Calibri', text_size, True, False)
+	# Render the text. "True" means anti-aliased text.
+	# Black is the color. This creates an image of the
+	# letters, but does not put it on the screen
+	text = font.render("Master Soso", True, BLACK)
+ 
+	# Put the image of the text on the screen at 250x250
+	screen.blit(text, [0, 0])
 	
 	# Go ahead and update the screen with what we've drawn.
 	# This MUST happen after all the other drawing commands.

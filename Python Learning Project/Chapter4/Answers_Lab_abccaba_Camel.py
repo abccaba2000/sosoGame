@@ -59,7 +59,6 @@ while done == False:
 		thirst += 2
 		native += random.randrange(7,15)
 		print('OK, The natives are closer.')
-		
 	if thirst > 4:
 		if thirst > 6:
 			print('You died of thirst!')
@@ -70,7 +69,7 @@ while done == False:
 			print('Your camel is dead.')
 			done = True
 		else:	print('Your camel is getting tired.')
-	if native >= travel+15:
+	if native+15 >= travel:
 		if native >= travel:
 			print('The natives caught the player')
 			done = True
