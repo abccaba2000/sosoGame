@@ -1,0 +1,56 @@
+1. 
+	guess: 
+		0
+		2
+		4
+		6
+		8
+	actual:
+		0
+		2
+		4
+		6
+		8
+		
+2.
+	guess:
+		1
+		2
+		4
+		8
+		16
+		32
+		
+	actual:
+		1
+		2
+		4
+		8
+		16
+		32
+		
+3.
+	Since x is always equal or bigger than 0 during the process
+4.
+ (1)
+	5
+	4
+	3
+	2
+	1
+	0
+	
+ (2)
+	The ' x == "1" ' condition is never satisfied since x is a integer.
+5.
+	copy the first line to the last line in the while loop.
+
+6.
+	Change the line 'while x < 0:' to 'while x > 0'
+7.
+	(1) i += 1
+	(2) the effect of this statement is already in the 'for' statement
+8.
+	Since nested for loop creates very differnt number of iterations compared to two independent for loop.
+
+		
