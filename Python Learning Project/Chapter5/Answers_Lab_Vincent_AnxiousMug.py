@@ -62,7 +62,7 @@ area_mug_body_size_width = int(area_mug_handle_size_width * 2)
 area_mug_body_size_height = int(area_mug_handle_size_height)
 area_mug_bottom_size_width = int(area_mug_body_size_width)
 area_mug_bottom_size_height = int(area_mug_body_size_height * 2)
-area_mug_handle_pos_y = int(area_road_pos_y + (area_road_size_height - area_mug_bottom_size_width) / 2)
+#area_mug_handle_pos_y = int(area_road_pos_y + (area_road_size_height - area_mug_bottom_size_height) / 2)
 
 # Game Loop
 done = False
