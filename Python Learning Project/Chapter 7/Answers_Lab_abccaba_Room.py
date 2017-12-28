@@ -68,13 +68,13 @@ while not done:
 			response = input("Who is the master of 3D printing?: ")
 			if response == 'Dehan' or response == 'dehan':
 				input('Coreect! You win!')
-				done == True
+				done = True
 				break
 			else:
 				choice = input('Wrong! Do you want to die or I give you another chance?(die/chance): ')
 				if choice == 'die':
 					input('You lose. What\'s your comment? ')
-					done == True
+					done = True
 					break
 		if done: break
 	#Let the player move
