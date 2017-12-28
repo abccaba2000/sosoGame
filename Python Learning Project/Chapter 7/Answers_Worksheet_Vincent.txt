@@ -1,0 +1,108 @@
+1. 
+	
+	Type		Example
+
+	Interger	1
+	Float		1.0
+	String		"1"
+	Boolean		True
+
+2.
+
+	2
+	101
+	
+	
+	The indexes in my_list are from 0 ~ 4, so my_list[5] is not existed, would not be printed out.
+
+3.
+
+	5
+	2
+	6
+	8
+	101
+
+4.
+
+	5
+	2
+	6
+	10
+	101
+	Tuple doesn't support assignment.
+
+5.
+
+	[15]
+	[3, 3, 3, 3, 3]
+
+	Notice : The answers are "Lists", not integers.
+
+6.
+	
+	[5, 0, 1, 2, 3, 4]
+
+7.
+
+	2
+	9
+	8
+	1
+	integer has no len()
+
+8.
+
+	SimpsonCollege
+	Simpsono
+	i
+
+9.
+
+	S
+	i
+	m
+	p
+	s
+	o
+	n
+
+10.
+
+	SimpsonCollegeCollegeCollege
+
+11.
+
+	HiHiHi
+
+12.
+
+	The 3rd spot is:  
+	The -1 spot is: .
+
+13.
+
+	1
+	012
+	3456789
+
+14.
+
+	list = []
+	for i in range(5) : 
+		userIn = float(input("Keyin a number : "))
+		list.append(userIn)
+		print(list)
+
+15.
+
+	my_list = [3,12,3,5,3,4,6,8,5,3,5,6,3,2,4]
+
+	total = 0
+
+	for element in my_list :
+		total += element
+
+	print("Ave = ", total / len(my_list))
+
+
