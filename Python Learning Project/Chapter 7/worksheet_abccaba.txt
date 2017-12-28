@@ -1,0 +1,91 @@
+1. 
+	list: [1,2,3]
+	tuple: (1,2,3)
+	string: 'abc'
+	number: 123
+2.
+	[2]
+	[101]
+	error: index out of range
+	
+	The key of this problem is that the index of a list counts from 0, not 1.
+
+3.
+	5
+	2
+	6
+	8
+	101
+	
+	The my_item in the for loop iterate elements in my_list
+
+4.
+	[5,2,6,10,101]
+	error: no assignment operation for tuple
+	
+	list can be modified while tuple can't
+
+5.
+	[15]
+	[3,3,3,3,3]
+	list can exapnd by mutiplication like line 3
+
+6.
+	[5,0,1,2,3,4]
+	
+	Each append operation add a new element in the tail of list
+
+7.
+	2
+	9
+	8
+	1
+	TypeError: object of type 'int' has no len()
+	string can be counted the lenghth with the number of character, while number can't
+
+8.
+	SimpsonCollege
+	Simpsono
+	i
+	the inedex '1' of line 2 refer to the second element in 'College' while that of line 3 refer to the second element in 'SimpsonCollege'
+	
+9.
+	S
+	i
+	m
+	p
+	s
+	o
+	n
+	'letter' in the for loop iterate each character in word
+
+10.
+	SimpsonCollegeCollegeCollege
+	'College' is concated to 'Simpson' 3 times.
+
+11.
+	'HiHiHi'
+	string can be expanded by multiplication
+	
+12.
+	The 3rd spot is:  
+	The -1 spot is:.
+	'-1' refer to the last element in the string
+
+13.
+	1
+	012
+	3456789
+	While the left side of ':' is not given, it refer to indexing from the first element; while the right side of ':' is not given, it refer to indexing to the last element
+
+14.
+	list = []
+	for i in range(5):
+		number = int(input('give me a number pleazzzz: '))
+		list.append(number)
+	print(number)
+15.
+	sum = 0
+	for number in my_list:
+		sum += number
+	print( float(sum)/len(my_list) )
