@@ -1,0 +1,81 @@
+1.
+
+	My Guess	Actual Output
+	0			0
+	2			2
+	4			4
+	6			6
+	8			8
+
+2.
+
+	My Guess	Actual Output
+	1			1
+	2			2
+	4			4
+	8			8
+	16			16
+	32			32
+
+3.
+
+	The initial value of x is 0, and in the loop, x is always added by 2. It's no way for x to go to negative, so the conditional expression "and x >= 0" is redundant.
+
+4.
+
+	This program would print :
+	5
+	4
+	3
+	2
+	1
+	0
+
+	I guess the author want to print "Blast off!" while the value of x is 1, but "1" is a string, not an integer, so the expression " x == "1" " would never be true.
+
+	The code could be revised as below to achieve the expectation :
+	
+		x = 5
+		while x >= 0:
+			if str(x) == "1":
+				print("Blast off!")
+			else :
+				print(x)
+			x = x - 1
+
+5.
+
+	Copy the first line to the end in the loop.
+
+	Fixed Code :
+
+	x = float(input("Enter a number greater than zero: "))
+	while x <= 0:
+		print("Too small. Enter a number greater than zero: ")
+		x = float(input("Enter a number greater than zero: "))
+
+6.
+
+	Revise the "while x < 0:" by "while x > 0 :".
+
+	Fix Code :
+
+	x = 10
+	 
+	while x > 0 :
+		print(x)
+		x -= 1
+	 
+	print("Blast-off")
+
+7.
+
+	"i = 0" and "i += 1" are unnecessary codes. 
+
+	"range(10)" would generate an integer set from 0 to 9, which would include the effect of "i = 0"; and "for...in..." statement would loop through each of the integer set, which is equivalent to the effect of "i += 1".
+
+8.
+
+	In Sample 1, there are 2 independent loops, each of them loops for 10 iterations, so the value x is 20.
+	
+	In Sample 2, there is a nested loop, each layer loops for 10 iterations, totally contributes 100 to the value of x. And in outer loop, there is an another increment of x, contributing 10 to the value of x. Finally, the value of x is 110.

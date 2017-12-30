@@ -1,0 +1,106 @@
+1.
+
+	Y-axis Positive :
+
+		In computer coordinate system, y-axis positive goes down; in Cartesian coordinate system, y-axis positive goes up.
+
+	Origin :
+
+		In computer coordinate system, origin is at the upper-left of a screen; in Cartesian coordinate system, origin is at the center.
+
+2.
+
+	"import pygame" and "pygame.init()"
+
+3.
+
+	The 3 numbers of the triplet define red, green, and blue, respectively. The range of each number is from 0 to 255, from none to full color. All colors mix with the same quantity produces white.
+
+4.
+
+	A variable with a all-upper-case name is usually a constant; a variable with a all-lower-case name is usually a common variable, means the value of it might change while program is running.
+
+	When defining a color, constant variable represents a definite, accepted color; common variable represents a indefinite, unaccepted color.
+
+5.
+
+	Create a surface and return it.
+
+	It's common to use this method determining the size(resolution) of a screen.
+
+	There are also several preserved flags to control screen-relate effects.
+
+6.
+
+	Go through every event in the queue of "pygame.event.get()", which gets input from user.
+
+	In general condition, we also calculate the game logic, draw and update the screen in each iteration of this loop.
+
+7.
+
+	Create an object to help track time. In this lecture, "Clock.tick" is used to delay each iteration of the main loop, limiting the frame rate of the game.
+
+8.
+
+	(1) Determine the line is drawn on "screen".
+	(2) Determine the origin coordinate of the line.
+	(3) Determine the end coordinate of the line.
+	(4) Determine the width of the line is in 5 pixels.
+
+9.
+
+	Draw things in loop, set variable offsets as the inputs of drawing function, and adjust properly in each iteration.
+
+10.
+
+	Create a solid rectangle.
+
+11.
+
+	(1) The origin is (x, y) = (20, 20).
+	(2) The origin was specified to the left-upper point of a rectagle which surrounded the ellipse.
+	(3) The width is 250 and the length is 100.
+
+12.
+
+	The start and end directional angle in radians (the same definition to which in mathematics) are needed.
+
+13.
+
+	1. Create the "font" object by "pygame.font.Font()"
+	2. Render the text by the font just created using ".render" method.
+	3. Put the rendered text(surface object) onto the screen using ".blit" method.
+
+	If we don't want the default font, we could select the built-in fonts from OS, like the following video : 
+		https://www.youtube.com/watch?time_continue=9&v=l-Sup0DLquM
+
+14.
+
+	The first line of the code of drawing text is to set the font. And, in general, there's no need to change the font while playing games.
+
+15.
+
+	The coordinates of the vertices of the polygon should be [50, 100], [0, 200], [200, 200], and [100, 50].
+
+16.
+
+	Update the entired contents (in other words, everything you just draw) of surface on the screen.
+
+17.
+
+	Uninitialized all pygame modules. 
+
+	When the Python interpreter shuts down, "pygame.quit()" is called regardless; but if you want to only terminate the pygame resources and the other part of Python program continues, this method is required.
+
+	Once importing pygame library, all the functions could be recongnized in program. But function could only be used after initializing by "pygame.init()", and before quitting pygame by "pygame.quit()"
+
+18.
+
+	pygame.draw.circle(screen, BLACK, [5, 5], 3, 5)
+
+
+
+
+
+
+
