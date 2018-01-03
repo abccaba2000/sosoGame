@@ -1,0 +1,45 @@
+1.
+
+	This code would assign the variable "rect_x" by 50 in every iteration, so the rectangle would not move.
+
+2.
+
+	"rect_x" and "rect_y" determine the origin position of a rectangle; "rect_change_x" and "rect_change_y" determine how the position change in each iteration.
+
+3.
+
+	At the point that the shape's y-value is at 380.
+
+4.
+
+	In general, if we want to make an animation contains a bouncing object, we would multiply the variable of increment by -1 to change the moving direction, rather than the variable of position directly like this code do.
+
+	Multiply -1 to the position variable cause the object "teleport" itself from one position to another, and the 2 positions (previous and new) are symmetrical to the axis of coordinate system.
+
+5.
+
+	Select a body part (Ex. head) as a reference to all other body parts so that the x,y pair only to determine the position of the reference body part.
+
+6.
+
+	This code would generate new 50 stars in each iteration, while the frame rate is high, the output on the screen looks like noise.
+
+7.
+
+	Record the selected visual features (position, shape, color etc.) of all the items, and adjust all the values in each iteration properly.
+
+	As the "snow flake" example in this lecture, we need to generate all 50 positions of snow flakes and record them in a list. Then we take the position information from the list and add some value to y-position in each iteration, so that all snow flakes could move constantly.
+
+8.
+
+	print(stars[1][0])
+
+9.
+
+	Both of them are partial code block, so I can only figure out the reason under some assumption.
+
+	If the 2 code block have the same function, I would guess the "snow_list" is defined as pairs in list (Ex : [[x1, y1], [x2, y2], ...]), so that each element of the list is a [x, y] pair, which is used by the first code block. 
+
+10.
+
+	The program fixed the start position of the lines at the center of the circle; and calculated the end positions of the lines by 'sin' and 'cos' function, which was using radian as input. The program adjust the value of radian in each iteration so that the line would 'spin' as wish.
