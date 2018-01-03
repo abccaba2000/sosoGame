@@ -1,0 +1,23 @@
+1. 
+	since every time before we draw the rectangle, we set the position to the same value.
+2. 
+	rect_y: the y value of the position of the left-up point of the rectangle
+	rect_x: the x value of the position of the left-up point of the rectangle
+	rect_change_y: the y value of change of position of the rectangle
+	rect_change_x: the x value of change of position of the rectangl
+3.
+	If it is a rectangle, check when the y posiotion of the left-up point is at 380
+4. 
+	We should inverse the direction the shape move, not the position
+5.
+	We can use a pair of variable to maintain the position of one part of the figure, and calculate positions of other parts according to this pair.
+6.
+	Since there is not a star with a trackable position
+7.
+	Store their posiotions in a list
+8. 
+	print(stars[1][0])
+9.
+	Since the pygame.draw.circle takes the a list containing position information, which snow_list[i] suffice.
+10.
+	It uses sin and cos to calculate the posiotion of the end point of the line.
