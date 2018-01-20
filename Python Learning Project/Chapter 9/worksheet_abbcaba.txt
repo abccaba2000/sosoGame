@@ -1,0 +1,312 @@
+section 1
+1.	
+	guess:
+		1
+		2
+		3
+		4
+		5
+		
+	actual:
+		1
+		2
+		3
+		4
+		5
+
+2.	
+	guess:
+		0
+		1
+		2
+		3
+		4
+		5
+		
+	actual:
+		0
+		1
+		2
+		3
+		4
+
+3.	
+	guess:
+		5
+	
+	actual:
+		5
+		
+4.	
+	guess:
+		25
+		
+	actual:
+		25
+		
+5.	
+	guess:
+		0	0
+		0	1
+		0	2
+		0	3
+		0	4
+		1	0
+		1	1
+		1	2
+		1	3
+		1	4
+		2	0
+		2	1
+		2	2
+		2	3
+		2	4
+		3	0
+		3	1
+		3	2
+		3	3
+		3	4
+		4	0
+		4	1
+		4	2
+		4	3
+		4	4
+	
+	actual:
+		0 0
+		0 1
+		0 2
+		0 3
+		0 4
+		1 0
+		1 1
+		1 2
+		1 3
+		1 4
+		2 0
+		2 1
+		2 2
+		2 3
+		2 4
+		3 0
+		3 1
+		3 2
+		3 3
+		3 4
+		4 0
+		4 1
+		4 2
+		4 3
+		4 4
+
+6.	
+	guess:
+		25 lines which contain a '*' in each line
+		
+	actual:
+		25 lines which contain a '*' in each line
+7.	
+	guess:
+		5 lines which coantains 5 '*'s in each line
+	actual:
+		5 lines which coantains 5 '*'s in each line
+8.	
+	guess:
+		a line containing 25 '*'s
+	actual:
+		a line containing 25 '*'s
+9.	
+	guess:
+		error index out of range
+		It reuse the 'i' as the variable to count the sum and to iterate the list and to index the list
+	actual:
+		Traceback (most recent call last):
+		 File "abccaba.py", line 4, in <module>
+			i = i + my_list[i]
+		IndexError: list index out of range
+10.	
+	guess:
+		5
+		
+	actual:
+		5
+
+11.	
+	guess:
+		<5 random number (0 or 1)>
+		Play again?
+		...
+		Bye!
+		
+	actual:
+		<5 random number (0 or 1)>
+		Play again?
+		...
+		Bye!
+		
+12.	
+	guess:
+		3
+		
+	actual:
+		3
+13.	
+	guess:
+		4
+		3
+		
+	actual:
+		4
+		3
+		
+14.	
+	guess:
+		4
+		3
+		
+	actual:
+		4
+		3
+		
+15.	
+	guess:
+		4
+		error variable not claimed
+	actual:
+		4
+		Traceback (most recent call last):
+		  File "abccaba.py", line 6, in <module>
+			print(z)
+		NameError: name 'z' is not defined
+16.	
+	guess:
+		x=10
+		x=11
+		x=10
+		
+	actual:
+		x= 10
+		x= 11
+		x= 10
+
+17.	
+	guess:
+		f start
+		g start
+		h
+		g end
+		f end
+		
+	actual:
+		f start
+		g start
+		h
+		g end
+		h
+		f end
+
+18.	
+	guess:
+		x=10
+		foo has been called
+		x=3
+		
+	actual:
+		x= 10
+		foo has been called
+		x= 10
+
+19.	
+	guess:	
+		main	1
+		a	1
+		a	2
+		main	1
+		main	5
+		b	5
+		b	6
+		main	6
+		main	5
+		c	5
+		c	102
+		main	5
+		
+	actual:
+		main 1
+		a 1
+		a 2
+		main 1
+		main 5
+		b 5
+		b 6
+		main 6
+		main 5
+		c 5
+		c 102
+		main 5
+
+section 2
+1. 
+	last line: sum(10,11,12)
+2.
+	the second last line: x=increase(x)
+3.
+	the first line: def print_hello():
+4.
+	the second line: for i in range(10):
+5.
+	revise the function:
+	def sum_list(list):
+		sum = 0
+		for i in list:
+			sum += i
+		return sum
+6.
+	the line in the for loop: result = result + text[(i+1) * -1]
+7.
+	use '==' instead of '=' in the if statement
+
+section 3
+1. 
+	def func():
+		print("Hello World.")
+2.
+	func()
+3.
+	def func(name):
+		print("Hello",name)
+4.
+	name = input("enter a name")
+	func(name)
+5.
+	def func(a,b):
+		print(a*b)
+6.
+	a = int(input("enter a number"))
+	b = int(input("enter another number"))
+	func(a,b)
+7.
+	def func(phrase, count):
+		for i in range(int(count)):
+			print(phrase)
+8.
+	phrase = input("enter a phrase")
+	count = int(input("enter a number"))
+	func(phrase, count)
+9.
+	def func(number):
+		return number*number
+10.
+	number = int(input("enter a number"))
+	print(func(number))
+11.
+	def func(m,v,r):
+		return m*(v*v/r)
+12.
+	m = float(input("enter the mass"))
+	v = float(input("enter the velocity"))
+	r = float(input("enter the radius"))
+13.
+	def func(lis):
+		for i in lis:
+			print(i)
