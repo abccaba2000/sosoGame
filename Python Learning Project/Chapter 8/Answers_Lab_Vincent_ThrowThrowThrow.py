@@ -29,7 +29,7 @@ Color_Black = (0, 0, 0)
 
 ## Others
 Pos_SpinCenter = [int(ScreenSize[0] / 2), int(ScreenSize[1] / 4)]
-Factor_Gravity = 1.5
+Factor_Gravity = 0.1
 
 ## Stick
 Len_Stick = int(ScreenSize[0] * ScreenSize[1] / 5000)
@@ -253,7 +253,7 @@ while not done :
 
 
 	''' Frame Rate Control '''
-	clock.tick(20)
+	clock.tick(100)
 
 
 
