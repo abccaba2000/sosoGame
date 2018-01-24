@@ -1,0 +1,58 @@
+1.
+
+	The location of the stick figure cannot be specified because none of the drawing function has at least one variable argument.
+
+2.
+
+	import pygame
+
+	BLACK = (0, 0, 0)
+	WHITE = (255, 255, 255)
+
+	pygame.init()
+
+	size = [500, 600]
+	screen = pygame.display.set_mode(size)
+
+	pygame.display.set_caption("Sosogame")
+
+	done = False
+
+	clock = pygame.time.Clock()
+
+	while not done :
+
+		for event in pygame.event.get() :
+			if event.type == pygame.QUIT :
+				done = True
+
+
+			# Grab the position of mouse
+			mouse_pos = pygame.mouse.get_pos()
+			
+			# Just print x coordinate
+			print(mouse_pos[0])
+
+		pygame.display.flip()
+
+		clock.tick(100)
+
+	pygame.quit()
+
+3.
+
+	If the event processing loop is splitted into two parts, the former code block will process all the events in the event queue, remain nothing for the latter code block.
+
+4.
+
+	If we multiply -1 to 'speed' variable while we are moving something by keyboard, the direction control setting will be modified.
+
+	For example, we usually define speed negative as going left while pressing left arrow key. If we multiply -1 to the speed while the object touching the boundary, the left arrow key will then make the object go right hand side.
+
+5.
+
+	Mouse is always 'somewhere' on the screen.
+
+6.
+
+	If it means 'joystick', the return value would be [1, 1]
