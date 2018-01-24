@@ -1,0 +1,13 @@
+1.
+	It always draw the stick in the same position no matter what the 'x', 'y' parameters are
+2.
+	pos = pygame.mouse.get_pos()
+	x_coord = pos[0]
+3.
+	If there is another loop to process events after thr first loop, the 'pygame.event.get()' won't grab any events because they were already processed in the prior loop
+4.
+	Since the speed is reseted every time the user push the key.
+5. 
+	Since the mouse position itself suffice this information
+6.
+	(1,1)
