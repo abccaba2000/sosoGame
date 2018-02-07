@@ -1,0 +1,46 @@
+1.
+
+	It's easy to find the tutorials on Youtube.
+
+	For Win7
+		https://www.youtube.com/watch?v=wxIIskKmUQA
+	
+	For Win10
+		https://www.youtube.com/watch?v=uetx4prNSTg
+		https://www.youtube.com/watch?v=t1yP9ICmW48
+
+2.
+
+	Photos - .jpg 
+	Graphic art - .bmp
+	Uncompressed images - .gif .png .bmp
+	Songs and sound effects - .ogg
+	Uncompressed sounds - .wav
+
+3.
+
+	Images should be loaded before the main loop, and be blitted in main program loop.
+
+4.
+
+	You can always find free online converters as your wish.
+
+		https://www.online-convert.com/result/bc022ba3-0e61-4b50-8090-33d8f1b8b25c
+
+	If you change the extension of a file, you just change the way that the OS opens it, the content of the file will not be change.
+
+5.
+
+	Am .jpg image is a compressed image, the background of it will not be uni-color. If the image is converted to .png, there's no way to determine the background color, even it's hard to figure out the boundary between the main object and the background.
+
+6.
+
+	Load the song file using "pygame.mixer.Sound" before main loop,
+
+	And write the code :
+
+		if not pygame.mixer.get_busy() :
+			click_sound.play()
+
+	in main loop.
+
