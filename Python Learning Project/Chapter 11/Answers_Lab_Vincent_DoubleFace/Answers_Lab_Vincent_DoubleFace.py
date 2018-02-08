@@ -72,7 +72,7 @@ music = pygame.mixer.music.load("anpanman.ogg")
 pygame.mixer.music.play()
 pygame.mixer.music.set_endevent(pygame.USEREVENT)
 
-background_image = pygame.image.load("傳恩雙下巴.jpg").convert()
+background_image = pygame.image.load("Chain'sDoubleJaw.jpg").convert()
 
 
 while not is_game_done :
