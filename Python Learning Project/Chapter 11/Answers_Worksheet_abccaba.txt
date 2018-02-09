@@ -1,0 +1,28 @@
+1.
+	啟動 Windows 檔案總管，您可以藉由開啟任何資料夾來執行這項操作。
+	按一下 [檢視] 索引標籤。
+	向下捲動直到看見 [隱藏已知檔案類型的副檔名]，按一下核取方塊以取消核取此列。
+	注意 如果要隱藏副檔名，核取此列。
+2.
+	Photos: .jpg
+	Graphic art: .gif, .png
+	Uncompressed images: .bmp
+	Songs and sound effects: wav, ogg, mp3
+	Uncompressed sounds: wav
+3.
+	An image should be loaded before the main program loop, since it can only be loaded once and blitted when needed.
+	An image should be blitted in the main loop, since we need to blit the image every time we want the image to appear in a frame
+	
+4.
+	You can visit the following website to convert tour jpg to gif
+	https://image.online-convert.com/convert-to-gif
+	
+	Just change the extension doesn't work since the content and format of the file remains the same 
+5.
+	If a picture is once saved in jpg format, the color will be modified by the algorithm for now and forever.
+6.
+	We can use the following command to set the end of music as a event called USEREVENT
+		
+		pygame.mixer.music.set_endevent(pygame.constants.USEREVENT)
+		
+	Then in the game loop, when detecting the USEREVENT happens, we can restart the music
