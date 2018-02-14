@@ -1,0 +1,122 @@
+1.
+	An object is an instance of a class
+2.
+	A method is a function defined inside a class
+3.
+	dog = Dog
+	dog.age = 5
+	dog.name = 'Doubleface'
+	dog.weight = 20
+4.
+	Andy = Person()
+	abccaba = Person()
+	Andy.name = 'Andy'
+	Andy.cellphone = '0987751677'
+	Andy.email = 'abccaba2000@gmail.com'
+	abccaba.name = 'abccaba'
+	abccaba.cellphone = '0987751677'
+	abccaba.email = 'abccaba2000@gmail.com'
+5.
+	class Bird():
+		def __init__(self):
+			self.color = ""
+			self.name = ""
+			self.breed = ""
+6.
+	class Person():
+		def __init__(self):
+			self.name = ""
+			self.position = ""
+			self.strength = ""
+7.
+	In last two lines, when assigning an value to an attribute of an object, we should add 'nancy.' as prefix
+8.
+	In the last line, it should be 'bob.money' instead of 'money'
+9.
+	Since we haven't assign any value to the attribute of bob
+10.
+	Checking account is a Bank Account
+	Mortgage account is a Bank Account
+	Person has a Address
+	Customer is a Person
+	Customer has a SSN
+	Customer has a Bank Account
+	Withdraw is a Transaction
+	Bank Account has a Transaction
+	Bank Account has a Deposit
+11.
+	We use inheritance to implement 'is-a' relation, for example: 
+	
+	class Person():
+		def __init__(self):
+			self.name = ""
+	 
+	class Employee(Person):
+		def __init__(self):
+			# Call the parent/super class constructor first
+			super().__init__()
+	 
+			# Now set up our variables
+			self.job_title = 
+12.
+	We use method to implement 'has-a' relation, for example:
+	
+		class Dog():
+		def __init__(self):
+			self.age = 0
+			self.name = ""
+			self.weight = 0
+	 
+		def bark(self):
+			print("Woof")
+13.
+	We can use a list as the data structure of the attribute to handle a multiple 'has-a' condition.
+
+Part2
+1.
+	class Animal():
+		def __init__(self):
+			self.name = ""
+			print("An animal has been born.")
+			
+		def eat(self):
+			# Basic report
+			print("Munch munch.")
+			
+		def make_noise(self):
+			# Basic report
+			print("Grrr says "+self.name+".")
+2.
+	class Cat(Animal):
+		def __init__(self):
+			# Call the parent/super class constructor first
+			super().__init__()
+			print("A cat has been born.")
+	 
+		def make_noise(self):
+			# Basic report
+			print("Meow says "+self.name+".")	
+3.
+	class Dog(Animal):
+		def __init__(self):
+			# Call the parent/super class constructor first
+			super().__init__()
+			print("A dog has been born.")
+	 
+		def make_noise(self):
+			# Basic report
+			print("Bark says "+self.name+".")
+4.
+	cat = Cat()
+	dog1 = Dog()
+	dog2 = Dog()
+	cat.name = 'Lily'
+	dog1.name = 'Billy'
+	dog2.name = 'John'
+	cat.eat()
+	cat.make_noise()
+	dog1.eat()
+	dog1.make_noise()
+	dog2.eat()
+	dog2.make_noise()
+	
