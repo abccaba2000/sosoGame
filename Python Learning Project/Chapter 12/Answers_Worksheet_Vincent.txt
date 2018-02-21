@@ -1,0 +1,170 @@
+==Section 1==
+
+1.
+
+	Object is instance of class.
+
+2.
+
+	Method is function of class.
+
+3.
+
+	new_dog = Dog()
+	new_dog.age = 2
+	new_dog.name = "Meow"
+	new_dog.weight = 10
+
+4.
+
+	person_1 = Person()
+	person_2 = Person()
+
+	person_1.name = "Vincent"
+	person_1.cell_phone = "0909-009-099"
+	person_1.email = "someaddress@gmail.com"
+
+	person_2.name = "Bryant"
+	person_2.cell_phone = "0965-666-666"
+	person_2.email = "steelshooting@gmail.com"
+
+5.
+
+	class Bird() :
+
+		def __init__(self) :
+			self.color = ""
+			self.name = ""
+			self.breed = ""
+
+6.
+
+	class Somebody() :
+
+		def __init__(self) :
+			self.pos = [0, 0]
+			self.name = ""
+			self.strength = 0
+
+7.
+
+	'name' and 'money' are new variables, independent of the instance of Person class. To describe them the attributes of Person objects, put the name of instance variable 'nancy.' as prefix of them.
+
+8.
+
+	'money' in the last line is not defined. Reviseing 'money' to 'bob.money' as an attribute of Person instance is more reasonable.
+
+9.
+
+	The 'bob' refer to a object which is initialized by null string to 'name' attribute, and no any other assignment.
+
+10.
+
+	Customer is a Person.
+	
+	Customer has Address.
+	Customer has SSN.
+	Customer has Deposit.
+	Customer has Withdraw.
+	Customer has Bank Account.
+	Customer has Checking account.
+	Customer has Mortgage account.
+	Customer has Transaction.
+
+11.
+
+	If ClassA is a ClassB, all attributes and methods of ClassA can be also found in ClassB.
+
+	Implementation (ClassA is a ClassB) :
+		
+		class ClassA(ClassB) :
+
+			...
+
+12.
+
+	If a variable/function can only be access using an object, we will say the object has a attribute/metod.
+
+	Implementation (ClassA has a attribute 'attri_1') :
+
+		class ClassA() :
+
+			def __init__(self) :
+				self.attri_1 = ""
+13.
+
+	Set the attribute as a list, for example :
+
+		class Person():
+			def __init__(self):
+				self.account = []
+		 
+		bob = Person()
+		bob.account.append("kaku")
+		bob.account.append("lalu")
+		bob.account.append("mamu")
+
+		for i in range(3) :
+			print(bob.account[i])
+
+
+==Section 2==
+
+	class Animal :
+
+		def __init__(self, name) :
+			self.name = name
+			print("An animal has been born.")
+		
+		def eat(void) :
+			print("Munch Munch")
+
+		def make_noise(self) :
+			print("Grrr says", self.name)
+
+
+	class Cat(Animal) :
+
+		def __init__(self, name) :
+			super().__init__(name)
+			print("A cat has been born.")
+
+		def make_noise(self) :
+			print("Meow says : I am", self.name)
+
+	class Dog(Animal) :
+
+		def __init__(self, name) :
+			super().__init__(name)
+			print("A dog has been born.")
+
+		def make_noise(self) :
+			print("Bark says : I am", self.name)
+
+	cat = Cat("cat1")
+	print()
+
+	dog1 = Dog("dog1")
+	print()
+
+	dog2 = Dog("dog2")
+	print()
+
+	animal = Animal("animal1")
+	print()
+
+	cat.eat()
+	cat.make_noise()
+	print()
+
+	dog1.eat()
+	dog1.make_noise()
+	print()
+
+	dog2.eat()
+	dog2.make_noise()
+	print()
+
+	animal.eat()
+	animal.make_noise()
+	print()
