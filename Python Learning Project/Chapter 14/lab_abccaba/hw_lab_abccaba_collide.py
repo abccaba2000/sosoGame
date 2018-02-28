@@ -1,6 +1,10 @@
 import pygame
 import random
  
+import block_library
+import good_block_library
+import bad_block_library
+ 
 # Define some colors
 BLACK = (  0,   0,   0)
 WHITE = (255, 255, 255)
@@ -13,33 +17,9 @@ WIDTH = 700
 TEXT_SIZE = 25
 TEXT_POSITION = [int( WIDTH/2-TEXT_SIZE ), int( HEIGHT/3 )]
 
-class Block(pygame.sprite.Sprite):
-	"""
-	This class represents the ball.
-	It derives from the "Sprite" class in Pygame.
-	"""
- 
-	def __init__(self, color, width, height):
-		""" Constructor. Pass in the color of the block,
-		and its x and y position. """
- 
-		# Call the parent class (Sprite) constructor
-		super().__init__()
- 
-		# Create an image of the block, and fill it with a color.
-		# This could also be an image loaded from the disk.
-		self.height = height
-		self.width = width
-		self.image = pygame.Surface([width, height])
-		self.image.fill(color)
- 
-		# Fetch the rectangle object that has the dimensions of the image
-		# image.
-		# Update the position of this object by setting the values
-		# of rect.x and rect.y
-		self.rect = self.image.get_rect()
 
-class Player(Block):
+
+class Player(block_library.Block):
 	""" The class is the player-controlled sprite. """
  
 	# -- Methods
@@ -122,8 +102,8 @@ all_sprites_list = pygame.sprite.Group()
  
 for i in range(50):
 	# This represents a block
-	good_block = Block(GREEN, 20, 15)
-	bad_block = Block(RED, 20, 15)
+	good_block = good_block_library.Good_block(GREEN, 20, 15)
+	bad_block = bad_block_library.Bad_block(RED, 20, 15)
 	# Set a random location for the block
 	good_block.rect.x = random.randrange(WIDTH)
 	good_block.rect.y = random.randrange(HEIGHT)

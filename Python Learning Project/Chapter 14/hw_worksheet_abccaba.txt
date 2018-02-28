@@ -1,0 +1,16 @@
+1.
+	A collection of functions and classes stored in a python file
+2.
+	(1) make the code more organized
+	(2) make the functions and classes be able to used by different program
+	(3) make development by several developers possible
+3.
+	(1) import lib
+	(2) from lib import *
+4.
+	(1) need to specified the library name as prefix
+	(2) no need
+5.
+	yes
+6.
+	a domain specifier used to specify the identity of a function or class.
