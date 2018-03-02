@@ -1,0 +1,33 @@
+1.
+
+	Library, aka module, is the program which is imported by another program.
+
+2.
+
+	To break the program into several smaller but logical files, so that programmers can wirte different parts of a specific code simultaneously.
+
+3.
+
+	import math
+
+	from math import *
+
+4.
+
+	Case 1 : 
+
+		import math
+		math.exp(x)
+
+	Case 2 :
+
+		from math import *
+		exp(x)
+
+5.
+
+	Yes, they can.
+
+6.
+
+	A namespace is a mapping from names to objects.
